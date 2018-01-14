@@ -77,5 +77,5 @@ function placeOrder(cardNumber) {
     console.log(`Your total cost is $${total()}, which will be charge to the card ${cardNumber}.`)
     cart.length = 0
   }
-  retun cart
+  return cart
 }
