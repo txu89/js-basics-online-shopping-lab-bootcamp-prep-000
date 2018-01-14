@@ -41,6 +41,7 @@ function viewCart() {
     cartItem = Object.keys([cart.length - 1])
     cartSentence += `and ${cartItem} at ${cart[cart.length -1][cartItem]}.`
   }
+  return cartSentence
 }
 
 function total() {
