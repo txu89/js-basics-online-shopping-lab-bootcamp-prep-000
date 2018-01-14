@@ -10,6 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
+  let itemPrice = Math.random() * 100
   
 }
 
