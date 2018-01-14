@@ -28,6 +28,12 @@ function viewCart() {
     cartItem = Object.keys(cart[0])
     cartSentence += `${cartItem} at $${cart[0][cartItem]}.`
   }
+  else if (cart.length === 2) {
+    cartItem = Object.keys(cart[0])
+    cartSentence += `${cartItem} at $${cart[0][cartItem]} `
+    cartItem = Object.keys(cart[1])
+    cartSentence += `and ${cartItem} at $${cart[1][cartItem]}.`
+  }
 }
 
 function total() {
