@@ -34,7 +34,12 @@ function viewCart() {
     cartItem = Object.keys(cart[1])
     cartSentence += `and ${cartItem} at $${cart[1][cartItem]}.`
   } else {
-    for (let i = 0)
+    for (let i = 0; i < cart.length - 1; i++) {
+      cartItem = Object.keys(cart[i])
+      cartSentence += `${cartItem} at ${cart[i][cartItem]}, `
+    }
+    cartItem = Object.keys([cart.length - 1])
+    cartSentence += `and ${cartItem} at ${cart[cart.length -1][cartItem]}.`
   }
 }
 
