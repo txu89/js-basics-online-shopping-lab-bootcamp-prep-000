@@ -56,7 +56,6 @@ function total() {
 }
 
 function removeFromCart(item) {
-  let cartItem
   let itemNumToRemove = -1
   for (let i = 0; i < cart.length; i++) {
     if (cart[i].hasOwnProperty(item)) {
@@ -66,8 +65,9 @@ function removeFromCart(item) {
   if (itemNumToRemove < 0) {
     console.log('That item is not in your cart.')
   } else {
-    cartItem.splice
+    cart.splice(itemNumToRemove, 1)
   }
+  return cart
 }
 
 function placeOrder(cardNumber) {
