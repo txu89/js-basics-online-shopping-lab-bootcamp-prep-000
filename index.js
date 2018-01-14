@@ -19,12 +19,14 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  let cartItems = "In your cart, you have "
+  let cartItem
+  let cartSentence = "In your cart, you have "
   if (cart.length === 0) {
     return "Your shopping cart is empty."
   }
   else if (cart.length === 1) {
-    cartItems += `${cart[0].
+    cartItem = Object.keys(cart[0])
+    cartSentence += `${cartItem} at $${cart[0][cartItem]}.`
   }
 }
 
