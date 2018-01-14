@@ -49,7 +49,7 @@ function viewCart() {
 function total() {
   let totalPrice = 0
   for (let i = 0; i < cart.length; i++) {
-    cartItem = Object.keys(cart[i])
+    let cartItem = Object.keys(cart[i])
     totalPrice += cart[i][cartItem]
   }
   return totalPrice
