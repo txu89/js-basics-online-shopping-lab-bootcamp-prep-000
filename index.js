@@ -22,7 +22,7 @@ function viewCart() {
   let cartItem
   let cartSentence = "In your cart, you have "
   if (cart.length === 0) {
-    console.log("Your shopping cart is empty")
+    console.log("Your shopping cart is empty.")
     return "Your shopping cart is empty."
   }
   else if (cart.length === 1) {
