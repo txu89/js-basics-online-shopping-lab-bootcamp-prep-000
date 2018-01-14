@@ -57,8 +57,11 @@ function total() {
 
 function removeFromCart(item) {
   let cartItem
+  let itemNumToRemove
   for (let i = 0; i < cart.length; i++) {
-    if hascart[i]
+    if (cart[i].hasOwnProperty(item)) {
+      itemNumToRemove = i
+    }
   }
 }
 
