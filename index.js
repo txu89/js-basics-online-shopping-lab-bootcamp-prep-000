@@ -37,7 +37,7 @@ function viewCart() {
   } else {
     for (let i = 0; i < cart.length - 1; i++) {
       cartItem = Object.keys(cart[i])
-    cartSentence += `${cartItem} at $${cart[i][cartItem]}, `
+      cartSentence += `${cartItem} at $${cart[i][cartItem]}, `
     }
     cartItem = Object.keys(cart[cart.length - 1])
     cartSentence += `and ${cartItem} at $${cart[cart.length -1][cartItem]}.`
@@ -47,7 +47,11 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  let totalPrice = 0
+  for (let i = 0; i < cart.length; i++) {
+    cartItem = Object.keys(cart[i])
+    totalPrice += cart[i][cartItem]
+  }
 }
 
 function removeFromCart(item) {
